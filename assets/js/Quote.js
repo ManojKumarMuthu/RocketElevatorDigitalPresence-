@@ -37,10 +37,6 @@ numberOfElevators.style.display = 'none'
 maxOccupancy.style.display = 'none'
 extraFeildForFloors.style.display ='none'
 
-// numberOfFloorsOutput.style.display = 'none'
-// numberOfElevatorsOutput.style.display = 'none'
-// maximumOccupancyOutput.style.display = 'none'
-
 function displayEveryThing() {
   numberOfFloorsOutput.style.display = 'block'
   numberOfElevatorsOutput.style.display = 'block'

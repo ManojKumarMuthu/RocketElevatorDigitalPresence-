@@ -101,9 +101,9 @@
                         </button
 
                         <!-- Logo -->
-                        <a class="logo float-left scrollTo" href="#top">
-                            <img src="/assets/images/rocketElevators/rocketLogo.png" alt="Awards" />
-                        </a>
+						<a class="logo float-left"  href="RocketElevators.html">
+							<img src="/assets/images/rocketElevators/rocketLogo.png" alt="" />
+						</a>
 
                         <!-- 
                             Top Nav 
@@ -122,37 +122,37 @@
                                 -->
                                 <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
                                     <li class="active"><!-- HOME -->
-                                        <a href="#slidetop">
+                                        <a href="/RocketElevators.html">
                                             HOME
                                         </a>
                                     </li>
                                     <li><!-- SERVICES -->
-                                        <a href="#services">
+                                        <a href="/RocketElevators.html#services">
                                             SERVICES
                                         </a>
                                     </li>
                                     <li><!-- PORTFOLIO -->
-                                        <a href="#work">
+                                        <a href="/RocketElevators.html#work">
                                             PORTFOLIO
                                         </a>
                                     </li>
                                     <li><!-- NEWS -->
-                                        <a href="#news">
+                                        <a href="/RocketElevators.html#news">
                                             NEWS
                                         </a>
                                     </li>
                                     <li><!-- OVERVIEW -->
-                                        <a href="#overview">
+                                        <a href="/RocketElevators.html#overview">
                                             OVERVIEW
                                         </a>
                                     </li>
                                     <li><!-- CLIENTS -->
-                                        <a href="#clients">
+                                        <a href="/RocketElevators.html#clients">
                                             CLIENTS
                                         </a>
                                     </li>
                                     <li><!-- CONTACT -->
-                                        <a href="#contact">
+                                        <a href="/RocketElevators.html#contact">
                                             CONTACT
                                         </a>
                                     </li>
@@ -222,78 +222,106 @@
                 <form action="php/contact.php" method="post" enctype="multipart/form-data">
 
                     <fieldset class="row mb-5">
-                        <legend class="col-form-label col-sm-2 pt-">Building</legend>
+                        <legend class="col-form-label col-sm-12 pt- text-center font-weight-bold">Building</legend>
                     
-                        <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input1" type="radio" name="gridRadios1" id="residental" value="residential" checked>
-                            <label class="form-check-label1" for="residental">
-                            RESIDENTAL
-                            </label>
+                        <div class="form-group col-sm-4">
+                            <div class="form-check">
+                                <input class="form-check-input1" type="radio" name="gridRadios1" id="residental" value="residential" checked>
+                                <label class="form-check-label1" for="residental">
+                                RESIDENTAL
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input1" type="radio" name="gridRadios1" id="commercial" value="commercial">
-                            <label class="form-check-label1" for="commercial">
-                            COMMERCIAL
-                            </label>
+                        <div class="form-group col-sm-4">
+                            <div class="form-check">
+                                <input class="form-check-input1" type="radio" name="gridRadios1" id="commercial" value="commercial">
+                                <label class="form-check-label1" for="commercial">
+                                COMMERCIAL
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input1" type="radio" name="gridRadios1" id="industrial" value="industrial">
-                            <label class="form-check-label1" for="industrial">
-                            INDUSTRIAL 
-                            </label>
-                        </div>
+                        <div class="form-group col-sm-4">
+                            <div class="form-check">
+                                <input class="form-check-input1" type="radio" name="gridRadios1" id="industrial" value="industrial">
+                                <label class="form-check-label1" for="industrial">
+                                INDUSTRIAL 
+                                </label>
+                            </div>
                         </div>
                     </fieldset>
-                    
-                        <div id="number-of-appartments" class="input-field">
-                            <label>Number of Appartment</label>
-                            <input id="appartments-input" type="number" placeholder="0" />
+
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div id="number-of-appartments" class="input-field">
+                                <label>Number of Appartment</label>
+                                <input id="appartments-input" type="number" placeholder="0" />
+                            </div>
                         </div>
-                        <div id="number-of-floors" class="input-field">
-                            <label>Number of Floors</label>
-                            <input id="floors-input" type="number" placeholder="0" />
+                        <div class="col-sm-6">
+                            <div id="extra-feild-for-floors" class="input-field">
+                                <label>Number of Floors</label>
+                                <input id="extra-floor-input" type="number" placeholder="0" />
+                            </div>
                         </div>
-                        <div id="number-of-elevators" class="input-field">
-                            <label>Number of Elevators</label>
-                            <input id="elevators-input" type="number" placeholder="0" />
+                    </div>  
+                    <div class="row">
+                        <div class="col-sm-6">    
+                            <div id="number-of-floors" class="input-field">
+                                <label>Number of Floors</label>
+                                <input id="floors-input" type="number" placeholder="0" />
+                            </div>
                         </div>
-                        <div id="maximum-occupancy" class="input-field">
-                            <label>Maximum Occupancy</label>
-                            <input id="maximum-input" type="number" placeholder="0" />
+                        <div class="col-sm-6">
+                            <div id="maximum-occupancy" class="input-field">
+                                <label>Maximum Occupancy</label>
+                                <input id="maximum-input" type="number" placeholder="0" />
+                            </div>
                         </div>
-                        <div id="extra-feild-for-floors" class="input-field">
-                            <label>Number of Floors</label>
-                            <input id="extra-floor-input" type="number" placeholder="0" />
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="number-of-elevators" class="input-field">
+                                <label>Number of Elevators</label>
+                                <input id="elevators-input" type="number" placeholder="0" />
+                            </div>
                         </div>
+                    </div>
+
+
                         
                         
                     <fieldset class="row mb-5">
-                        <legend class="col-form-label col-sm-2 pt-0">Experience</legend>
-                        <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input2" type="radio" name="gridRadios2" id="standard" value="standard" checked>
-                            <label class="form-check-label2" for="standard">
-                            STANDARD
-                            </label>
+                        <legend class="col-form-label col-sm-12 pt- text-center font-weight-bold">Experience</legend>
+                        <div class="form-group col-sm-4">
+                            <div class="form-check">
+                                <input class="form-check-input2" type="radio" name="gridRadios2" id="standard" value="standard" checked>
+                                <label class="form-check-label2" for="standard">
+                                STANDARD
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input2" type="radio" name="gridRadios2" id="premium" value="premium">
-                            <label class="form-check-label2" for="premium">
-                            PREMIUM
-                            </label>
+                        <div class="form-group col-sm-4">
+                            <div class="form-check">
+                                <input class="form-check-input2" type="radio" name="gridRadios2" id="premium" value="premium">
+                                <label class="form-check-label2" for="premium">
+                                PREMIUM
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input2" type="radio" name="gridRadios2" id="excellent" value="excellent">
-                            <label class="form-check-label2" for="excellent">
-                            EXCELLENT
-                            </label>
-                        </div>
+                        <div class="form-group col-sm-4">
+                            <div class="form-check">
+                                <input class="form-check-input2" type="radio" name="gridRadios2" id="excellent" value="excellent">
+                                <label class="form-check-label2" for="excellent">
+                                EXCELLENT
+                                </label>
+                            </div>
                         </div>
                     </fieldset>
                     
 
                     <hr> </hr>
+                    <div class="output-container">
                         <div id="number-of-appartments-output" class="input-field2">
                             <label>Number of elevators</label>
                             <input id="appartments-output" value="" type="number" placeholder="0" readonly />
@@ -310,6 +338,7 @@
                             <label>total cost</label>
                             <input id="maximum-output" value="" type="number" placeholder="0" readonly />
                         </div>
+                    </div>
 
                 </form>
 

@@ -1,0 +1,16 @@
+/* Used to display the output in single row */ 
+.output-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .input-field2 {
+    flex: 1;
+  }
+
+ /* Used to display the radio button */
+
+.form-check-label1 {
+    font-weight: bold;
+    display: block;
+  }
