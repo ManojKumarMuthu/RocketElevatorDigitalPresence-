@@ -91,9 +91,12 @@ function resetFunction1() {
 }
 
 function calculateElevators() {
-  
-  appartmentsOutput.value= elevatorsInput.value
-  };
+  if (elevatorsInput.value >=1){
+  appartmentsOutput.value = elevatorsInput.value
+  } else {
+  appartmentsOutput.value = 0;
+  }
+};
 
 // Residential number of elevators calculation
 
@@ -112,7 +115,7 @@ function calculateAppartmentsPerFloor() {
   let appartments = parseFloat(appartmentInput.value);
 
   // Check if both values are numbers
-  if (!isNaN(floors) && !isNaN(appartments)) {
+  if (( floors >=2) && (appartments >=1 )) {
     // Check if the number of floors is not zero
     if (floors < 20) {
       // Calculate the value of the appartmentsOutput element
@@ -140,7 +143,7 @@ function calculateAppartmentsPerFloor() {
   } 
   else {
     // Set the value of the appartmentsOutput element to an error message
-    appartmentsOutput.value = "Error: Invalid input";
+    appartmentsOutput.value = 0;
   }
 }
 
@@ -162,9 +165,8 @@ function calculatePeoplesPerFloor() {
   let maxOcc = parseFloat(maximumInput.value);
 
   // Check if both values are numbers
-  if (!isNaN(floors1) && !isNaN(maxOcc)) {
-    // Check if the number of floors is not zero
-    if (floors1 >= 2) {
+  if ((floors1 >=2) && (maxOcc >=1)) {
+  
     let a = floors1 * maxOcc;
     let aa = a / 200;
     let aaa = Math.ceil(aa);
@@ -175,44 +177,47 @@ function calculatePeoplesPerFloor() {
       appartmentsOutput.value = aaaaaaa;
     }
     else {
-      appartmentsOutput.value = "Error: Invalid input";
+      appartmentsOutput.value = 0;
     }
   } 
-  else {
-    // Set the value of the appartmentsOutput element to an error message
-    appartmentsOutput.value = "Error: Invalid input";
-  }
-}
-
+  
 
 standard.addEventListener('click', calculateprices);
 
 function calculateprices() {
-  console.log(standard.value)
   let eleNeeded = parseFloat(appartmentsOutput.value);
-floorsOutput.value = 8000;
-elevatorsOutput.value = ((eleNeeded * 8000) / 100) * 10;
-maximumOutput.value = (eleNeeded * 8000) + ((eleNeeded * 8000) / 100) * 10 ; 
-}
+  if (eleNeeded >=1){
+    floorsOutput.value = (eleNeeded * 8000).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    elevatorsOutput.value = ((eleNeeded * 8000) / 100 * 10).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    maximumOutput.value = ((eleNeeded * 8000) + ((eleNeeded * 8000) / 100) * 10).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 
+} else {
+  resetFunction()
+}}
 
 premium.addEventListener('click', calculateprices1);
 
 function calculateprices1() {
-  console.log(premium.value)
   let eleNeeded1 = parseFloat(appartmentsOutput.value);
-floorsOutput.value = 12000;
-elevatorsOutput.value = ((eleNeeded1 * 12000) / 100) * 15;
-maximumOutput.value = (eleNeeded1 * 12000) + ((eleNeeded1 * 12000) / 100) * 15 ; 
-}
+  if (eleNeeded1 >=1){
+    floorsOutput.value = (eleNeeded1 * 12000).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    elevatorsOutput.value = ((eleNeeded1 * 12000) / 100 * 15).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    maximumOutput.value = ((eleNeeded1 * 12000) + ((eleNeeded1 * 12000) / 100) * 15).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+ 
+}else {
+  resetFunction()
+}}
 
 excellent.addEventListener('click', calculateprices2);
 
 function calculateprices2() {
-  console.log(excellent.value)
   let eleNeeded2 = parseFloat(appartmentsOutput.value);
-floorsOutput.value = 15000;
-elevatorsOutput.value = ((eleNeeded2 * 15000) / 100) * 20;
-maximumOutput.value = (eleNeeded2 * 15000) + ((eleNeeded2 * 15000) / 100) * 20 ; 
-}
+  if (eleNeeded2 >=1){
+    floorsOutput.value = (eleNeeded2 * 15000).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    elevatorsOutput.value = ((eleNeeded2 * 15000) / 100 * 20).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    maximumOutput.value = ((eleNeeded2 * 15000) + ((eleNeeded2 * 15000) / 100) * 20).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+
+}else {
+  resetFunction()
+}}
 

@@ -222,7 +222,7 @@
                 <form action="php/contact.php" method="post" enctype="multipart/form-data">
 
                     <fieldset class="row mb-5">
-                        <legend class="col-form-label col-sm-12 pt- text-center font-weight-bold">Building</legend>
+                        <legend class="col-form-label col-sm-12 pt- text-center font-weight-bold">BUILDING TYPES</legend>
                     
                         <div class="form-group col-sm-4">
                             <div class="form-check">
@@ -254,45 +254,43 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div id="number-of-appartments" class="input-field">
-                                <label>Number of Appartment</label>
-                                <input id="appartments-input" type="number" placeholder="0" />
+                                <label>NUMBER OF APPARTMENTS</label>
+                                <input id="appartments-input" type="number" placeholder="0" min="1" />
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div id="extra-feild-for-floors" class="input-field">
-                                <label>Number of Floors</label>
-                                <input id="extra-floor-input" type="number" placeholder="0" />
+                                <label>NUMBER OF FLOORS</label>
+                                <input id="extra-floor-input" type="number" placeholder="0" min="1" />
                             </div>
                         </div>
                     </div>  
                     <div class="row">
                         <div class="col-sm-6">    
                             <div id="number-of-floors" class="input-field">
-                                <label>Number of Floors</label>
-                                <input id="floors-input" type="number" placeholder="0" />
+                                <label>NUMBER OF FLOORS</label>
+                                <input id="floors-input" type="number" placeholder="0" min="1" />
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div id="maximum-occupancy" class="input-field">
-                                <label>Maximum Occupancy</label>
-                                <input id="maximum-input" type="number" placeholder="0" />
+                                <label>MAXIMUM OCCUPANCY</label>
+                                <input id="maximum-input" type="number" placeholder="0" min="1" />
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
                             <div id="number-of-elevators" class="input-field">
-                                <label>Number of Elevators</label>
-                                <input id="elevators-input" type="number" placeholder="0" />
+                                <label>NUMBERS OF ELEVATORS</label>
+                                <input id="elevators-input" type="number" placeholder="0" min="1" />
                             </div>
                         </div>
                     </div>
 
 
-                        
-                        
                     <fieldset class="row mb-5">
-                        <legend class="col-form-label col-sm-12 pt- text-center font-weight-bold">Experience</legend>
+                        <legend class="col-form-label col-sm-12 pt- text-center font-weight-bold">EXPERIENCES</legend>
                         <div class="form-group col-sm-4">
                             <div class="form-check">
                                 <input class="form-check-input2" type="radio" name="gridRadios2" id="standard" value="standard" checked>
@@ -323,20 +321,20 @@
                     <hr> </hr>
                     <div class="output-container">
                         <div id="number-of-appartments-output" class="input-field2">
-                            <label>Number of elevators</label>
+                            <label>NUMBER OF ELEVATORS</label>
                             <input id="appartments-output" value="" type="number" placeholder="0" readonly />
                         </div>
                         <div id="number-of-floors-output" class="input-field2">
-                            <label>Unit cost of elevator</label>
-                            <input id="floors-output" value="" type="number" placeholder="0" readonly />
+                            <label>UNIT COST OF ELEVATOR</label>
+                            <input id="floors-output" value="" type="" placeholder="0" readonly />
                         </div>
                         <div id="number-of-elevators-output" class="input-field2">
-                            <label>Installation cost</label>
-                            <input id="elevators-output" value="" type="number" placeholder="0" readonly />
+                            <label>INSTALLATION COST</label>
+                            <input id="elevators-output" value="" type="" placeholder="0" readonly />
                         </div>
                         <div id="maximum-occupancy-output" class="input-field2">
-                            <label>total cost</label>
-                            <input id="maximum-output" value="" type="number" placeholder="0" readonly />
+                            <label>TOTAL COST</label>
+                            <input id="maximum-output" value="" type="" placeholder="0" readonly />
                         </div>
                     </div>
 
