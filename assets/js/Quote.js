@@ -187,7 +187,7 @@ standard.addEventListener('click', calculateprices);
 function calculateprices() {
   let eleNeeded = parseFloat(appartmentsOutput.value);
   if (eleNeeded >=1){
-    floorsOutput.value = (eleNeeded * 8000).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    floorsOutput.value = (8000).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     elevatorsOutput.value = ((eleNeeded * 8000) / 100 * 10).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     maximumOutput.value = ((eleNeeded * 8000) + ((eleNeeded * 8000) / 100) * 10).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 
@@ -200,7 +200,7 @@ premium.addEventListener('click', calculateprices1);
 function calculateprices1() {
   let eleNeeded1 = parseFloat(appartmentsOutput.value);
   if (eleNeeded1 >=1){
-    floorsOutput.value = (eleNeeded1 * 12000).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    floorsOutput.value = (12000).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     elevatorsOutput.value = ((eleNeeded1 * 12000) / 100 * 15).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     maximumOutput.value = ((eleNeeded1 * 12000) + ((eleNeeded1 * 12000) / 100) * 15).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
  
@@ -213,7 +213,7 @@ excellent.addEventListener('click', calculateprices2);
 function calculateprices2() {
   let eleNeeded2 = parseFloat(appartmentsOutput.value);
   if (eleNeeded2 >=1){
-    floorsOutput.value = (eleNeeded2 * 15000).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    floorsOutput.value = (15000).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     elevatorsOutput.value = ((eleNeeded2 * 15000) / 100 * 20).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     maximumOutput.value = ((eleNeeded2 * 15000) + ((eleNeeded2 * 15000) / 100) * 20).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 
